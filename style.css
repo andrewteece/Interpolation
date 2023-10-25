@@ -1,0 +1,17 @@
+.box {
+  aspect-ratio: 1/1;
+}
+.box-red-100 {
+  background: red;
+  width: 100px;
+}
+.box-green-150 {
+  background: red;
+  width: 150px;
+}
+.box-blue-200 {
+  background: red;
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */

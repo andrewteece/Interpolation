@@ -1,0 +1,21 @@
+$red: red;
+$green: green;
+$blue: blue;
+$width: 100px;
+
+.box {
+  aspect-ratio: 1 / 1;
+
+  &-#{$red}-100 {
+    background: $red;
+    width: $width;
+  }
+  &-#{$green}-150 {
+    background: $red;
+    width: $width * 1.5;
+  }
+  &-#{$blue}-200 {
+    background: $red;
+    width: $width * 2;
+  }
+}
