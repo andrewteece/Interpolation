@@ -11,11 +11,11 @@ $width: 100px;
     width: $width;
   }
   &-#{$green}-150 {
-    background: $red;
+    background: $green;
     width: $width * 1.5;
   }
   &-#{$blue}-200 {
-    background: $red;
+    background: $blue;
     width: $width * 2;
   }
 }
