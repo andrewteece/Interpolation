@@ -1,17 +1,39 @@
+/* WITHOUT MIXIN */
+/*
 .box {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
+
+  &-red-100 {
+    background: $red;
+    width: $width;
+  }
+  &-green-150 {
+    background: $green;
+    width: $width * 1.5;
+  }
+  &-blue-200 {
+    background: $blue;
+    width: $width * 2;
+  }
 }
+*/
+/* WITH MIXIN */
 .box-red-100 {
-  background: red;
-  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: red;
+  width: 100em;
 }
+
 .box-green-150 {
-  background: green;
-  width: 150px;
+  aspect-ratio: 1/1;
+  background-color: green;
+  width: 150em;
 }
+
 .box-blue-200 {
-  background: blue;
-  width: 200px;
+  aspect-ratio: 1/1;
+  background-color: blue;
+  width: 200em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,11 @@
 $red: red;
 $green: green;
 $blue: blue;
-$width: 100px;
+$width: 100;
 
+/* WITHOUT MIXIN */
+
+/*
 .box {
   aspect-ratio: 1 / 1;
 
@@ -19,3 +22,18 @@ $width: 100px;
     width: $width * 2;
   }
 }
+*/
+
+/* WITH MIXIN */
+
+@mixin box($color, $multiply: 1) {
+  .box-#{$color}-#{$multiply * $width} {
+    aspect-ratio: 1 / 1;
+    background-color: $color;
+    width: $width * $multiply * 1em;
+  }
+}
+
+@include box($red);
+@include box($green, 1.5);
+@include box($blue, 2);
