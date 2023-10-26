@@ -136,3 +136,22 @@ $clr-accent: limegreen;
 .btn-primary-1 {
   @include button2($clr-primary, white);
 }
+
+/* Mixin with Optional Arguments */
+
+@mixin linear-gradient($deg: -45deg, $clr-1: red, $clr-2: blue) {
+  background-image: linear-gradient($deg, $clr-1, $clr-2);
+}
+
+.hero {
+  padding: max(10vh, 5rem);
+  @include linear-gradient($deg: -90deg);
+}
+
+.call-to-action {
+  @include linear-gradient($clr-2: yellow);
+}
+
+.hero--accent {
+  @include linear-gradient(-65deg, green, gold);
+}

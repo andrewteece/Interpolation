@@ -119,4 +119,18 @@
   font-weight: 700;
 }
 
+/* Mixin with Optional Arguments */
+.hero {
+  padding: max(10vh, 5rem);
+  background-image: linear-gradient(-90deg, red, blue);
+}
+
+.call-to-action {
+  background-image: linear-gradient(-45deg, red, yellow);
+}
+
+.hero--accent {
+  background-image: linear-gradient(-65deg, green, gold);
+}
+
 /*# sourceMappingURL=style.css.map */
