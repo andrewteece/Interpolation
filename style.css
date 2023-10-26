@@ -1,22 +1,20 @@
 /* WITHOUT MIXIN */
-/*
 .box {
-  aspect-ratio: 1 / 1;
-
-  &-red-100 {
-    background: $red;
-    width: $width;
-  }
-  &-green-150 {
-    background: $green;
-    width: $width * 1.5;
-  }
-  &-blue-200 {
-    background: $blue;
-    width: $width * 2;
-  }
+  aspect-ratio: 1/1;
 }
-*/
+.box-red-100 {
+  background: red;
+  width: 100;
+}
+.box-green-150 {
+  background: green;
+  width: 150;
+}
+.box-blue-200 {
+  background: blue;
+  width: 200;
+}
+
 /* WITH MIXIN */
 .box-red-100 {
   aspect-ratio: 1/1;
@@ -49,6 +47,28 @@
 .in-your-face-text {
   font-size: 4rem;
   text-transform: uppercase;
+}
+
+/* Selector inside of Mixins */
+.page-title {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+.page-title span {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.call-to-action {
+  color: white;
+  background: black;
+}
+.call-to-action a {
+  color: yellow;
+}
+.call-to-action__title {
+  font-size: 2.5rem;
+  color: #f07178;
 }
 
 /*# sourceMappingURL=style.css.map */
