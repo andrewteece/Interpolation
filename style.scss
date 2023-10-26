@@ -30,10 +30,32 @@ $width: 100;
   .box-#{$color}-#{$multiply * $width} {
     aspect-ratio: 1 / 1;
     background-color: $color;
-    width: $width * $multiply * 1em;
+    width: $width * $multiply * 1rem;
   }
 }
 
 @include box($red);
 @include box($green, 1.5);
 @include box($blue, 2);
+
+/* Extends and Mixins */
+
+%extend-bold-text {
+  font-weight: bold;
+}
+
+@mixin mixin-uppercase-text {
+  text-transform: uppercase;
+}
+
+.accent-text {
+  font-size: 1.125rem;
+  @extend %extend-bold-text;
+  @include mixin-uppercase-text();
+}
+
+.in-your-face-text {
+  font-size: 4rem;
+  @extend %extend-bold-text;
+  @include mixin-uppercase-text();
+}

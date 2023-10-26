@@ -21,19 +21,34 @@
 .box-red-100 {
   aspect-ratio: 1/1;
   background-color: red;
-  width: 100em;
+  width: 100rem;
 }
 
 .box-green-150 {
   aspect-ratio: 1/1;
   background-color: green;
-  width: 150em;
+  width: 150rem;
 }
 
 .box-blue-200 {
   aspect-ratio: 1/1;
   background-color: blue;
-  width: 200em;
+  width: 200rem;
+}
+
+/* Extends and Mixins */
+.in-your-face-text, .accent-text {
+  font-weight: bold;
+}
+
+.accent-text {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.in-your-face-text {
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
