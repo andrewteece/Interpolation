@@ -71,4 +71,52 @@
   color: #f07178;
 }
 
+/* Mixins with Arguments */
+.btn--accent {
+  background: blue;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn--inverted {
+  background: white;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+.btn-primary {
+  background: steelblue;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  background: dodgerblue;
+  color: black;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-accent--1 {
+  background: limegreen;
+  color: yellow;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-primary-1 {
+  background: steelblue;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */

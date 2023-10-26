@@ -3,6 +3,10 @@ $green: green;
 $blue: blue;
 $width: 100;
 
+$clr-primary: steelblue;
+$clr-secondary: dodgerblue;
+$clr-accent: limegreen;
+
 /* WITHOUT MIXIN */
 
 .box {
@@ -89,4 +93,46 @@ $width: 100;
 
 .call-to-action {
   @include inverted-colors();
+}
+
+/* Mixins with Arguments */
+
+@mixin button($bg) {
+  background: $bg;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn--accent {
+  @include button($bg: blue);
+}
+
+.btn--inverted {
+  @include button($bg: white);
+  color: black;
+}
+
+@mixin button2($bg, $color) {
+  background: $bg;
+  color: $color;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-primary {
+  @include button2($clr-primary, #fff);
+}
+
+.btn-secondary {
+  @include button2($clr-secondary, black);
+}
+
+.btn-accent--1 {
+  @include button2($clr-accent, yellow);
+}
+
+.btn-primary-1 {
+  @include button2($clr-primary, white);
 }
